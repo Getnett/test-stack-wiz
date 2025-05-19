@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  box-sizing: border-box;
+  --background: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background: var(--background);
+  color: white;
+  background-image: url("/bg-stack.png");
+  background-size: 40vw 90vh;
+  background-position: 45vw -40px;
+  background-repeat: no-repeat;
+  font-family: var(--font-volk-sans-normal);
+}
+
+.tactic-sans-med {
+  font-family: var(--font-tactic-sans-med);
+}
+.font-tactic-forced {
+  font-family: var(--font-tactic-sans-med) !important;
+}
+/* Small screens (sm) */
+@media (min-width: 40rem) {
+  body {
+    background-size: cover;
+    background-position: left top;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Medium screens (md) */
+@media (min-width: 48rem) {
+  body {
+    background-size: cover;
+    background-position: left top;
+  }
+}
+
+/* Large screens (lg) */
+@media (min-width: 64rem) {
+  body {
+    background-size: 55vw 90vh;
+    background-position: 45vw -40px;
+  }
+}
+
+/* Extra-large screens (xl) */
+@media (min-width: 80rem) {
+  body {
+    background-size: 58vw 90vh;
+    background-position: 45vw -40px;
+  }
 }
