@@ -37,10 +37,7 @@ const SubProgress: FC<SubProgressProps> = ({ name, status }) => {
                     width="2666.67"
                     height="2666.67"
                   >
-                    <div
-                      xmlns="http://www.w3.org/1999/xhtml"
-                      className="add-gradient w-full h-full opacity-100"
-                    ></div>
+                    <div className="add-gradient w-full h-full opacity-100"></div>
                   </foreignObject>
                 </g>
               </g>
