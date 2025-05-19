@@ -21,12 +21,17 @@ body {
   font-family: var(--font-volk-sans-normal);
 }
 
+.add-gradient {
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 255, 255, 1) 0deg,
+    rgba(45, 45, 45, 1) 360deg
+  );
+}
 .tactic-sans-med {
   font-family: var(--font-tactic-sans-med);
 }
-.font-tactic-forced {
-  font-family: var(--font-tactic-sans-med) !important;
-}
+
 /* Small screens (sm) */
 @media (min-width: 40rem) {
   body {

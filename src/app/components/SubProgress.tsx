@@ -39,11 +39,7 @@ const SubProgress: FC<SubProgressProps> = ({ name, status }) => {
                   >
                     <div
                       xmlns="http://www.w3.org/1999/xhtml"
-                      className="w-full h-full opacity-100"
-                      style={{
-                        background:
-                          "conic-gradient(from 90deg,rgba(255, 255, 255, 1) 0deg,rgba(45, 45, 45, 1) 360deg)",
-                      }}
+                      className="add-gradient w-full h-full opacity-100"
                     ></div>
                   </foreignObject>
                 </g>
