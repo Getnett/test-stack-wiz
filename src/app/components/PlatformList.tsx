@@ -7,7 +7,7 @@ import Platform from "./Platform";
 
 const PlatformList: FC = () => {
   return (
-    <div className=" flex flex-col gap-3 mt-10 w-sm">
+    <div className="flex flex-col gap-3 mt-10 w-sm">
       {PLATFORMS.map(({ name, imageUrl, twoFactorAuth, connected }) => (
         <Platform
           key={name}
@@ -18,7 +18,9 @@ const PlatformList: FC = () => {
         />
       ))}
 
-      <ButtonYellow title="Continue" onClick={() => {}} />
+      <div className="mt-10">
+        <ButtonYellow title="Continue" onClick={() => {}} />
+      </div>
     </div>
   );
 };
