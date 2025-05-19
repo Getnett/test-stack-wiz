@@ -5,7 +5,7 @@ interface SubProgressProps {
   name: string;
 }
 // TODO bordering
-const SubProgress: FC<SubProgressProps> = ({ status, name }) => {
+const SubProgress: FC<SubProgressProps> = ({ name, status }) => {
   return (
     <div className="w-full  bg-[#141414] flex-col-reverse divide-y-4 divide-y-reverse border-[#404040]">
       {status === "loading" && (

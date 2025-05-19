@@ -2,9 +2,11 @@
 
 Install
 
-````bash
+```bash
 
 npm install
+
+```
 
 Run
 
@@ -14,6 +16,7 @@ npm run dev
 # or
 yarn dev
 
-````
+
+```
 
 Type manually route /connect
